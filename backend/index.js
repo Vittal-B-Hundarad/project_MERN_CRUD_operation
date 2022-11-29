@@ -119,23 +119,5 @@ app.get('/only100',async (req,res)=>{
     }
 })
 
-// function verifyToken(req,res,next){
-//     let token =req.headers['authorization']
 
-//     if(token){
-//         token=token.split(' ')[1];
-//         console.warn("Middleware called",token);
-//         jwt.verify(token,jwtkey,(err,valid)=>{
-//          if(err){
-//            res.status(401).send({result:"please provide valid token"});
-//          }else{
-//            next();
-//          }
-//         })
-//     }
-//     else{
-//        res.status(403).send({result:"please add token with header"});
-//     }
-
-// }
 app.listen(5000);
